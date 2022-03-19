@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Login</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="../css/estilo.css"/>
+  </head>
+
+  <body>
+    
+    <header>
+        <a href="../index.html">Página Inicial</a></p>
+        <p align="center"><img src="../imagem/galobanner.jpg" alt="BannerIndex" widht="100%"/></p>
+        <div class = "titulo_destaque"><h2 align = "center">Faça login para aproveitar as vantagens!</h2></div>
+        <p align="center"><i>O Galo é o time da virada! O Galo é o time do amor!</i></p>
+      </header>
+  <form id="login" action="" method="get" class= "login">
+    <h3>Seja bem vindo!</h3>
+    <input id="email" type="text" name = "email" placeholder="Seu email" />
+    <input type="passaword" name = "senha" placeholder="Sua senha" />
+    <button type="submit" name ="acao" onclick="atualiza()">Enviar</button>
+  </form>
+
+
+    <footer>
+        <p align="center"><sup><i>Galo Alvinegro - Galão da Massa - Galo Doido - Campeão do Gelo - Galo das Américas- O Time do Impossível - Galáctico - Maior de Minas - Seleção do Povo - El Mineiro</i></sup></p>
+    </footer>
+  </body>
+  <script>
+    function atualiza(){
+    var formulario = document.getElementById('login')
+    formulario.parentNode.removeChild( formulario );
+    var logado = '<p>Usuário logado!</p>'
+    document.getElementsByTagName('body')[0].innerHTML += logado
+    }
+    </script>
+</html>

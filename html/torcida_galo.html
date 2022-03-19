@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Torcida Galo</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="../css/estilo.css"/>
+</head>
+<body>
+    <header>
+        <p><a href="../index.html">Página Inicial</a></p>
+        <p align="center"><img src="../imagem/galobanner.jpg" alt="BannerIndex" widht="100%"/></p>
+        <h2 align = "center">Seja um torcedor registrado!</h2>
+    </header>
+
+    <div class = "titulo_destaque"><h2 align = "center">Deseja reservar ingressos para o próximo jogo? Cadastre-se:</h2></div>
+
+    <form class="form1">
+        <p><b>Nome:</b></p>
+            <p><input type="text" placeholder="Nome" maxlength="40" size="40"></input></p>
+        <p><b>Telefone de Contato:</b></p>
+            <p><input type="number" placeholder="DDD" maxlength="2" size="7"></input>
+            <input type="number" placeholder="Número" maxlength="9" size="20"></input></p>
+        <p><b>Informe a data do seu aniversário:</b></p>
+            <p><input type="date" name="diaAniv"></p>
+        
+        <p><b>Email:</b></p>
+        <p><input type="text" placeholder="Digite aqui seu e-mail" maxlength="60" size="40"></input></p>
+        
+        <p><b>Cidade e Estado onde mora</b></p>
+        <p><input type="text" placeholder="Ex: Manhuaçu - MG" maxlength="50" size="50"></p>
+
+        <p>Número de ingressos que deseja reservar para o próximo jogo (entre 1 e 3):</p>
+        <p><input type="number" name="quantidade" min="1" max="3"></p>
+        <button type="submit" name ="acao" onclick="atualiza()">Enviar Numero</button>
+
+    <h3>Deseja receber as novidades do time?</h3>
+
+    <p><b>Receber e-mails e SMS com as novidades do clube?</b></p>
+        <p><input type="radio" name="novclubes" value="opcao1">Sim</p>
+        <p><input type="radio" name="novclubes" value="opcao2">Não</p>
+        <p><input type="radio" name="novclubes" value="opcao3">Apenas e-mails</p>
+        <p><input type="radio" name="novclubes" value="opcao4">Apenas SMS</p>
+
+    <p><b>Selecione abaixo as novidades que deseja receber: </b></p>     
+        <p><input type="checkbox" name="tipoNovidades" value="lançProdutos">Lançamento de produtos no geral</p>
+        <p><input type="checkbox" name="tipoNovidades" value="lançCamisas">Lançamento de camisetas</p>
+        <p><input type="checkbox" name="tipoNovidades" value="hJogos">Horário dos jogos</p>
+        <p><input type="checkbox" name="tipoNovidades" value="attDividas">Atualizações acerca das dividas</p>
+        <p><input type="checkbox" name="tipoNovidades" value="notElencos">Noticias do elenco e da Cidade do Galo</p>
+        <p><input type="checkbox" name="tipoNovidades" value="todas">Todas as opções acima</p>
+
+    <button type="submit" name ="acao" onclick="atualiza()">Enviar Cadastro</button>
+    </form>
+    
+        <footer>
+            <p align="center"><sup><i>Galo Alvinegro - Galão da Massa - Galo Doido - Campeão do Gelo - Galo das Américas- O Time do Impossível - Galáctico - Maior de Minas - Seleção do Povo - El Mineiro</i></sup></p>
+        </footer>
+
+</body>
+</html>
